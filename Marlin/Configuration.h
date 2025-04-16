@@ -36,6 +36,7 @@
  * Advanced settings can be found in Configuration_adv.h
  */
 #include "build_params.h"
+#include "build_params.variants/params_bltouch3950.h" //FEI
 #define CONFIGURATION_H_VERSION 02010200
 
 
@@ -1145,7 +1146,7 @@
 #endif
 
 // Mechanical endstop with COM to ground and NC to Signal uses "false" here (most common setup).
-#define X_MIN_ENDSTOP_INVERTING true  // Set to true to invert the logic of the endstop.
+#define X_MIN_ENDSTOP_INVERTING false  //FEI Set to true to invert the logic of the endstop.
 #define Y_MIN_ENDSTOP_INVERTING true  // Set to true to invert the logic of the endstop.
 #ifdef FB_G6_BLTOUCH
   #define Z_MIN_ENDSTOP_INVERTING false  // Set to true to invert the logic of the endstop.
